@@ -77,11 +77,14 @@ To launch the Docker environment in developer mode:
    docker-compose up -d
    ```
 
-1. Start the file synchronization with `mutagen.io`. If you use `docker-sync` for file synchronization, skip this step.
+1. Start the file synchronization with `mutagen.io`. If you use the `docker-sync` tool for file synchronization, skip this step.
 
    ```bash
    bash ./mutagen.sh
    ```
+
+   {:.bs-callout-info}
+   If you host your Docker environment on Windows and the session start fails, update the `mutagen.sh` file to change the value for the `--symlink-mode` option to `portable`.
 
 1. Deploy Magento in the Docker container.
 
@@ -96,7 +99,10 @@ To launch the Docker environment in developer mode:
 1. Configure and connect Varnish.
 
    ```bash
-   docker-compose run deploy magento-command config:set system/full_page_cache/caching_application 2 --lock-env && \
+   docker-compose run deploy magento-command config:set system/full_page_cache/caching_application 2 --lock-env
+   ```
+
+   ```bash
    docker-compose run deploy magento-command setup:config:set --http-cache-hosts=varnish
    ```
 
