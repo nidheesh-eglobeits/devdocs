@@ -72,6 +72,7 @@ You can stop containers and restore them afterwards using the following methods.
 Action | Command
 ------ | -------
 Suspend containers to continue your work later | `docker-compose stop`
+Stop and remove all containers, images, and volumes | `docker-compose down`
 Start containers from a suspended state | `docker-compose start`
 Stop the synchronization daemon | `docker-sync stop`
 Start the synchronization daemon | `docker-sync start`
@@ -83,7 +84,7 @@ Use the following command to stop and remove the Docker configuration:
    ```
 
 {: .bs-callout-warning}
-This removes all components of your local Docker instance including containers, networks, volumes, and images.
+This removes all components of your local Docker instance including containers, networks, volumes, and images. This does NOT remove the persistent database volume. See [Database containers].
 
 ## Sendmail service
 
@@ -102,3 +103,4 @@ ENABLE_SENDMAIL=true
 [prod-mode]: {{page.baseurl}}/cloud/docker/docker-mode-production.html
 [dev-mode]: {{page.baseurl}}/cloud/docker/docker-mode-developer.html
 [enable Xdebug]: {{page.baseurl}}/cloud/docker/docker-development-debug.html
+[Database containers]: {{page.baseurl}}/cloud/docker/docker-database.html
