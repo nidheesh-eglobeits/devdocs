@@ -89,5 +89,5 @@ To launch the Docker environment in developer mode:
 
 [cloud-repo]: https://github.com/magento/magento-cloud
 [magento-creds]: {{page.baseurl}}/install-gde/prereq/connect-auth.html
-[services]: {{page.baseurl}}/cloud/docker/docker-services.html#service-versions
+[services]: {{page.baseurl}}/cloud/docker/docker-containers.html#service-versions
 [configure Xdebug]: {{page.baseurl}}/cloud/docker/docker-development-debug.html#configure-xdebug

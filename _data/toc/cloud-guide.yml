@@ -6,7 +6,6 @@ pages:
       children:
         - label: Onboarding tasks
           url: /cloud/onboarding/onboarding-tasks.html
-          exclude_versions: ["2.0"]
 
     - label: Architecture
       url: /cloud/architecture/cloud-architecture.html
@@ -49,7 +48,6 @@ pages:
 
         - label: SendGrid
           url: /cloud/project/sendgrid.html
-          exclude_versions: ["2.0"]
 
     - label: Local development setup
       url: /cloud/setup/first-time-setup.html
@@ -83,7 +81,6 @@ pages:
 
     - label: Docker development
       url: /cloud/docker/docker-development.html
-      exclude_versions: ["2.0"]
       children:
         - label: Docker container architecture
           url: /cloud/docker/docker-containers.html
@@ -120,7 +117,6 @@ pages:
 
     - label: Integrations
       url: /cloud/integrations/cloud-integrations.html
-      exclude_versions: ["2.0"]
       children:
         - label: Bitbucket integration
           url: /cloud/integrations/bitbucket-integration.html
@@ -186,7 +182,6 @@ pages:
 
         - label: Custom VCL snippets
           url: /cloud/cdn/cloud-vcl-custom-snippets.html
-          exclude_versions: ["2.0"]
 
           children:
             - label: Reroute requests to a CMS backend
@@ -237,7 +232,6 @@ pages:
     
             - label: Cloud variables
               url: /cloud/env/variables-cloud.html
-              include_versions: ["2.1","2.2","2.3"]
 
             - label: Deploy variables
               url: /cloud/env/variables-deploy.html
@@ -277,7 +271,6 @@ pages:
 
     - label: Configuration management for store settings
       url: /cloud/live/sens-data-over.html
-      include_versions: [2.2","2.3"]
       children:
         - label: Example of managing system-specific settings
           url: /cloud/live/sens-data-initial.html

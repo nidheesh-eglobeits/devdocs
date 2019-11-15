@@ -31,7 +31,7 @@ Before you run functional tests, you must prepare your environment with the foll
 
    Before you begin, you must add the following hostname to your `/etc/hosts` file:
 
-   ```
+   ```bash
    127.0.0.1 web
    ```
 
@@ -72,7 +72,6 @@ modules:
       ...
       printOutput: true
 ```
-{:.no-copy}
 
 ### Run a specific test
 
